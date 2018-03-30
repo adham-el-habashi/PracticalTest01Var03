@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="ro.pub.cs.systems.eim.practicaltest01Var03.PracticalTest01Var03" >
+
+    <CheckBox
+        android:id="@+id/check_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/grupa_edit_box"
+        android:text="CheckBox" />
+
+    <EditText
+        android:id="@+id/name_edit_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:saveEnabled="false"
+        android:ems="7"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/navigate_to_secondary_activity_button"
+        android:gravity="center" />
+
+
+    <CheckBox
+        android:id="@+id/check_grupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_edit_box"
+
+        android:text="CheckBox" />
+
+    <EditText
+        android:id="@+id/grupa_edit_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:saveEnabled="false"
+        android:ems="7"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/name_edit_box"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/display_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:text="@string/display_info" />
+
+    <EditText
+        android:id="@+id/information_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:saveEnabled="false"
+        android:enabled="false"
+        android:inputType="number"
+        android:ems="7"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/display_button"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/navigate_to_secondary_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/go_to_secondary" />
+
+
+</RelativeLayout>
